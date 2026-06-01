@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ панель - Образовательная платформа</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="../index.html" class="logo">EduPlatform Admin</a>
+                <nav class="nav">
+                    <a href="users.html">Пользователи</a>
+                    <a href="points.html">Баллы</a>
+                    <a href="certificates.html">Сертификаты</a>
+                </nav>
+                <div class="auth-buttons">
+                    <button class="btn btn-outline" id="logoutBtn">Выйти</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <h1>Админ панель</h1>
+            <div class="admin-stats">
+                <div class="stat-card">
+                    <h3>Всего пользователей</h3>
+                    <div id="totalUsers">-</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Курсов</h3>
+                    <div id="totalCourses">-</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Сертификатов выдано</h3>
+                    <div id="totalCertificates">-</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Образовательная платформа. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="../js/api.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>
